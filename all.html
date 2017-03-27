@@ -1,0 +1,39 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+<script src="js/main.js" defer></script>
+<style>
+.samples__box {
+    overflow: hidden;
+    position: relative;
+    max-height: 15000px !important;
+}
+</style>
+<body ng-app="myApp" ng-controller="myCtrl">
+<link rel="stylesheet" href="css/main.css">
+
+<script src="js/controller.js" defer></script>
+
+<div data-ga-category="Main Page" data-ga-label="Samples" data-send-info="" class="samples js-ga-scroll-to">
+  <h2 class="samples__title js-content appearing-content"><a href="./all.html" style="text-decoration: none;">Back to Site</h2>
+
+    <div class="samples__box">
+        <div class="samples__col samples__col--left">
+          <div  ng-repeat="data in tota track by $index">
+            <div class="samples__item js-samples-item"><img ng-src="img/{{data}}.jpg" alt="free ui kit html5" class="samples__img">
+            </div>
+          </div>
+        </div>
+        <div class="samples__col samples__col--center">
+          <div  ng-repeat="data in totb track by $index">
+            <div class="samples__item js-samples-item"><img ng-src="img/{{data}}.jpg" alt="free ui kit html5" class="samples__img">
+            </div>
+          </div>
+        </div>
+        <div class="samples__col samples__col--right">
+          <div  ng-repeat="data in totc track by $index">
+            <div class="samples__item js-samples-item"><img ng-src="img/{{data}}.jpg" alt="free ui kit html5" class="samples__img">
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+</body>
